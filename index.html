@@ -8,27 +8,59 @@
 </head>
 <body>
     <main>
+        <!-- Refri Morango -->
         <div class="item active" style="--background: #EA3D41">
             <div class="title">Morango</div>
-            <img src="image/Morango-refrigerante-foregroundBlur.png" alt="imagem-Morango" class="fruit">
-            <img src="image/Morango-refrigerante.png" alt="" class="refri">
+            <img src="image/Morango-refrigerante-foregroundBlur.png" alt="Imagem de refrigerante" class="fruit">
+            <picture>
+                <!-- Imagem para telas grandes -->
+                <source srcset="image/Morango-refrigerante.png" media="(min-width: 1024px)" type="image/png" class="refri">
+                
+                <!-- Imagem para telas pequenas -->
+                <source srcset="image/img-pequenos/Morango-refrigerante-Pequeno.png" media="(max-width: 768px)" type="image/png" class="refri">
+              
+                <!-- Imagem padrão -->
+                <img src="image/Morango-refrigerante.png" alt="Imagem de refrigerante" class="refri">
+                
+              </picture>
         </div>
-        <div class="item" style="--background: #2D5643">
-            <div class="title">Abacate</div>
-            <img src="image/Abacate-refrigerante-foregroundBlur.png" alt="imagem-Abacate" class="fruit">
-            <img src="image/Abacate-refrigerante.png" alt="" class="refri">
-        </div>
+        <!-- Refri Laranja -->
         <div class="item" style="--background: #E7A043">
             <div class="title">Laranja</div>
-            <img src="image/Laranja-refrigerante-foregroundBlur.png" alt="" class="fruit">
-            <img src="image/Laranja-refrigerante.png" alt="imagem-Laranja" class="refri">
+            <img class="fruit" src="image/Laranja-refrigerante-foregroundBlur.png" alt="imagem de Laranja" class="fruit">
+            <picture>
+                <!-- Imagem para telas grandes -->
+                <source srcset="image/Laranja-refrigerante.png" media="(min-width: 1024px)" type="image/png" class="refri">
+              
+                <!-- Imagem para telas pequenas -->
+                <source srcset="image/img-pequenos/Laranja-refrigerante-Pequeno.png" media="(max-width: 768px)" type="image/png" class="refri">
+              
+                <!-- Imagem padrão -->
+                <img src="image/Laranja-refrigerante.png" alt="Imagem de refrigerante" class="refri">
+              </picture>
         </div>
-
-        <div class="arrow">
-            <button id="prev">&lt;</button>
-            <button id="next">&gt;</button>
+        <!-- Refri Abacate -->
+        <div class="item" style="--background: #2D5643">
+            <div class="title">Abacate</div>            
+            <img class="fruit" src="image/Abacate-refrigerante-foregroundBlur.png" alt="imagem de refrigerante" class="refri">
+            <picture>
+                <!-- Imagem para telas grandes -->
+                <source srcset="image/Abacate-refrigerante.png" media="(min-width: 1024px)" type="image/png" class="refri">
+              
+                <!-- Imagem para telas pequenas -->
+                <source srcset="image/img-pequenos/Abacate-refrigerante-Pequena.png" media="(max-width: 768px)" type="image/png" class="refri">
+              
+                <!-- Imagem padrão -->
+                <img src="image/Abacate-refrigerante.png" alt="Imagem de refrigerante" class="refri">
+              </picture>
         </div>
     </main>
-    <script src="js/index.js"></script>
+
+    <div class="arrow">
+        <button id="prev">&lt;</button>
+        <button id="next">&gt;</button>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
